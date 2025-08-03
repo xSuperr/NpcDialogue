@@ -65,7 +65,7 @@ final class PlayerInstance{
 			$abilities = $layer->getBoolAbilities();
 			if(isset($abilities[AbilitiesLayer::ABILITY_OPERATOR])){
 				$abilities[AbilitiesLayer::ABILITY_OPERATOR] = false;
-				$ability_layers[$index] = new AbilitiesLayer($layer->getLayerId(), $abilities, $layer->getFlySpeed(), $layer->getWalkSpeed());
+				$ability_layers[$index] = new AbilitiesLayer($layer->getLayerId(), $abilities, $layer->getFlySpeed(), $layer->getVerticalFlySpeed(), $layer->getWalkSpeed());
 			}
 		}
 
